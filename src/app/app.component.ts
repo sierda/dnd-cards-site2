@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ClassPipe } from './class.pipe';
 import { ClassService } from './class.service';
-
+import { Class } from './class';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,7 +10,7 @@ import { ClassService } from './class.service';
 })
 export class AppComponent {
   title = 'app works!';
-  classes: any = [];
+  classes: any = [];//Class
   constructor(private classService: ClassService) {}
 
   ngOnInit() {
