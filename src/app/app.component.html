@@ -1,3 +1,6 @@
-<h1>
+<div class="container">
   {{title}}
-</h1>
+  <div class="row" *ngFor="let class of (classes | class) ">
+    <p><b>{{class.id}}</b> {{class.name}}</p>
+  </div>
+</div>
