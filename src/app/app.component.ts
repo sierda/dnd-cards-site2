@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ClassPipe } from './class.pipe';
 import { ClassService } from './class.service';
 import { Class } from './class';
+import { MdTabsModule } from '@angular/material';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

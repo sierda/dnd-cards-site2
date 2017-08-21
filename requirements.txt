@@ -1,0 +1,6 @@
+
+1. Have Classes -> Levels -> Spells
+2. Saving for users
+3. Search Bar
+    -Easily accissible. Name of spell. All Classes and levels.
+    

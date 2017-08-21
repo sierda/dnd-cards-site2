@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+
+      <md-select [(ngModel)]="selectedClass" (ngModelChange)="changeClass()" style="width: 100%" placeholder="Class">
+        <md-option *ngFor="let class of (classes | class)" [value]="class">{{class.name}}</md-option>
+      </md-select>
+    </div>
+    <div class="col-md-6">
+      <md-select style="width: 100%" [(ngModel)]="selectedLevel" (ngModelChange)="changeLevel()" placeholder="Level">
+        <md-option *ngFor="let level of levels" [value]="level">{{level}}</md-option>
+
+      </md-select>
+    </div>
+  </div>
+  <p *ngIf="selectedClass">Selected class {{selectedClass.name}}</p>
+
+  <div id="spellViewer">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let spell of spellIds">
+        <spell [spellId]="spell"></spell>
+      </div>
+    </div>
+  </div>
+</div>

@@ -13,4 +13,7 @@ export class ClassService {
     return this.http.get(this.api + 'classes/all2').map(res => res.json());
   }
 
+  getLevelByClassId(id: number) {
+    return this.http.get(this.api + 'classes/' + id + '/spells').map(res => res.json());
+  }
 }

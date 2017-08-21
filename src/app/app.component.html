@@ -1,6 +1,7 @@
 <div class="container">
-  {{title}}
-  <div class="row" *ngFor="let class of (classes | class) ">
-    <p><b>{{class.id}}</b> {{class.name}}</p>
-  </div>
+  <md-tab-group>
+    <md-tab label="Spells"><app-spell-viewer></app-spell-viewer></md-tab>
+    <md-tab label="Favorites"><app-favorites></app-favorites></md-tab>
+  </md-tab-group>
+  
 </div>
