@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { ClassService } from './class.service';
 import { SpellsService } from './spells.service';
-import { MdTabsModule, MdSelectModule, MdCardModule } from '@angular/material';
+import { MdTabsModule, MdSelectModule, MdCardModule, MdButtonModule} from '@angular/material';
 import { AppComponent } from './app.component';
 import { ClassPipe } from './class.pipe';
 import { FavoritesComponent } from './favorites/favorites.component';
@@ -28,7 +28,8 @@ import { SpellComponent } from './spell/spell.component';
     BrowserAnimationsModule,
     MdSelectModule,
     HttpClientModule,
-    MdCardModule
+    MdCardModule,
+    MdButtonModule
   ],
   providers: [
     SpellsService,
