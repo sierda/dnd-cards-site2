@@ -2,14 +2,12 @@
   <md-card-title>{{spell.name}}</md-card-title>
   <md-card-subtitle>{{spell.type}}</md-card-subtitle>
   <md-card-content>
-    Casting Time: {{spell.casting_time}}<br>
-    Range: {{spell.range}}<br>
-    Components: {{spell.components}}<br>
-    Duration: {{spell.duration}}<br>
-    Description: {{spell.primary_description}}<br>
-
-    
-
+    Casting Time: <i>{{spell.casting_time}}</i><br>
+    Range: <i>{{spell.range}}</i><br>
+    Components: <i>{{spell.components}}</i><br>
+    Duration: <i>{{spell.duration}}</i><br>
+    Description:<br><br>
+    <div  class="descriptionPanel" [innerHtml]="spell.primary_description"></div>
   </md-card-content>
   <md-card-actions>
     <button md-button>Save</button>

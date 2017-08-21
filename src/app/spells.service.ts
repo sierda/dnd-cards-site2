@@ -23,7 +23,11 @@ export class SpellsService {
 
   getSpellIdsByClassAndLevel(classId: number, level: number) {
     let url = this.api + 'classes/' + classId + '/spells/' + level;
-    console.log(url);
+    return this.httpClient.get(url);
+  }
+
+  getSpellIdsUpToByClassAndLevel(classId: number, level: number) {
+    let url = this.api + 'classes/' + classId + '/spells/' + level + '/upto';
     return this.httpClient.get(url);
   }
 }

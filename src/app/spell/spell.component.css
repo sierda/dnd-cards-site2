@@ -1,0 +1,8 @@
+md-card-title  {
+    color: cornflowerblue;
+}
+
+.descriptionPanel {
+    height: 300px;
+    overflow: auto;
+}
