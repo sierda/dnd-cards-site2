@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ClassPipe } from './class.pipe';
 import { ClassService } from './class.service';
 import { Class } from './class';
-import { MdTabsModule } from '@angular/material';
+import { MdTabsModule, MdSelectModule } from '@angular/material';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,6 +12,12 @@ import { MdTabsModule } from '@angular/material';
 export class AppComponent {
   title = 'app works!';
   classes: any = [];//Class
+  users: any = [
+    "Mario",
+    "David",
+    "Matt"
+  ];
+  selectedUser: any;
   constructor(private classService: ClassService) {}
 
   ngOnInit() {

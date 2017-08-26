@@ -1,4 +1,4 @@
-<md-card *ngIf="spell">
+<md-card [@fadeInAnimation]='state'  *ngIf="spell">
   <md-card-title>{{spell.name}}</md-card-title>
   <md-card-subtitle>{{spell.type}}</md-card-subtitle>
   <md-card-content>

@@ -5,4 +5,10 @@
 body, html {
     /*font-family: 'Raleway', sans-serif;*//*Open Sans', sans-serif;*/
     font-family: 'Open Sans', sans-serif;
+    
+}
+
+#body {
+    background-color: aliceblue;
+    height: 100%;
 }
