@@ -6,8 +6,15 @@
   </md-select>
 
   <md-tab-group>
-    <md-tab label="Spells"><app-spell-viewer></app-spell-viewer></md-tab>
-    <md-tab label="Favorites"><app-favorites [user]="selectedUser"></app-favorites></md-tab>
+    <md-tab label="Quick">
+      <app-quick-search></app-quick-search>
+    </md-tab>
+    <md-tab label="Spells">
+      <app-spell-viewer></app-spell-viewer>
+    </md-tab>
+    <md-tab label="Favorites">
+      <app-favorites [user]="selectedUser"></app-favorites>
+    </md-tab>
   </md-tab-group>
-  
+
 </div>

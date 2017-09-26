@@ -30,5 +30,10 @@ export class SpellsService {
     let url = this.api + 'classes/' + classId + '/spells/' + level + '/upto';
     return this.httpClient.get(url);
   }
+
+  getSpellsByName(name: string) {
+    let url = this.api + 'spells/search?q=' + name;
+    return this.httpClient.get(url);
+  }
 }
 

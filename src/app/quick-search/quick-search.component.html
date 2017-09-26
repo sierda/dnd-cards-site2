@@ -1,0 +1,6 @@
+<md-form-field>
+  <input mdInput (input)="searchSpell($event)" placeholder="Spell">
+</md-form-field>
+<div>
+  <p *ngFor="let spell of spells">{{spell.name}}</p>
+</div>
