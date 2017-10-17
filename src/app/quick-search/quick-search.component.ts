@@ -15,8 +15,6 @@ export class QuickSearchComponent implements OnInit {
   }
 
   searchSpell(event: any) {
-    console.log(event.target.value);
-
     this.spellService.getSpellsByName(event.target.value).subscribe(
       data => {
         this.spells = <any>data;

@@ -2,3 +2,8 @@
     background-color: aliceblue;
     height: 100%;
 }
+
+
+md-tab {
+    overflow-x: hidden;
+}

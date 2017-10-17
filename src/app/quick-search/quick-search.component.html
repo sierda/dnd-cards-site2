@@ -1,6 +1,10 @@
-<md-form-field>
-  <input mdInput (input)="searchSpell($event)" placeholder="Spell">
-</md-form-field>
-<div>
-  <p *ngFor="let spell of spells">{{spell.name}}</p>
+<div style="height: 100%">
+  <md-form-field>
+    <input mdInput (input)="searchSpell($event)" placeholder="Spell">
+  </md-form-field>
+  <div class="row">
+    <div class="col-lg-3 col-md-6" *ngFor="let spell of spells">
+      <spell [spellId]="spell.id"></spell>
+    </div>
+  </div>
 </div>
